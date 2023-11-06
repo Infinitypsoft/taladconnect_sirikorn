@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap);
+.admin-books {
+  font-family: "Prompt", sans-serif;
+}
+
+.admin-bookstype {
+  font-family: "Prompt", sans-serif;
+}
+
+.admin-navbar {
+  font-family: "Prompt", sans-serif;
+}
+
+.admin-sidebar {
+  font-family: "Prompt", sans-serif;
+}
+
+.user-page {
+  font-family: "Prompt", sans-serif;
+}
+
+.admin-home {
+  font-family: "Prompt", sans-serif;
+}
+.admin-home .text-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.admin-home .text-from {
+  font-size: 17px;
+}
+.admin-home .text-from p {
+  font-size: 15px;
+  color: gray;
+}

@@ -1,0 +1,48 @@
+.home-page{
+  font-family: $font-prompt;
+  .title { 
+    margin-top: 10px;
+    margin-left: 8px;
+  }
+  .icon {
+    font-size: 2em;
+  }
+  .card-group{
+    height: auto;
+    .btn-group{
+      width: 160px;
+      height: 150px;
+      border-radius: 25px;
+      background: white;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
+  .card-books {
+    cursor: pointer;
+  }
+  .card {
+    width: 245px;
+  }
+  .card-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    text-align: center;
+  }
+  .card-text {
+    grid-area: text;
+  }
+  .card-text .date {
+    color: rgb(255, 7, 110);
+    font-size:13px;
+  }
+  .card-text p {
+    color: grey;
+    font-size:15px;
+  }
+  .card-text h2 {
+    font-size:28px;
+  }
+}

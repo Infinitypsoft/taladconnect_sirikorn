@@ -1,0 +1,33 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    RewriteCond %{REQUEST_URI} !(\.js|\.css|\.js|\.png|\.jpg|\.jpeg|\.gif|\.ico|\.svg|\.flv|\.3gp|\.mp4|\.wav|\.mp3|robots\.txt|\.woff|\.woff2|\.ttf|\.txt|\.docx|\.xlsx|\.pdf|\.htm)$ [NC]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(css|js|images|fonts|storage)/(.*)$ public/$1/$2 [L,NC]
+
+    # Hide a specific files
+    <Files ~ "(artisan|webpack.mix.js|server.php)">
+        Order allow,deny
+        Deny from all
+    </Files>
+    <Files ~ "\.(env|example|json|config.js|md|gitignore|gitattributes|lock|yml|xml|save|editorconfig)$">
+        Order allow,deny
+        Deny from all
+    </Files>
+</IfModule>

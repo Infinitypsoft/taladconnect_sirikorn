@@ -1,0 +1,27 @@
+.register-page {
+    font-family: $font-prompt;
+    @media screen and (max-width: 740px) {
+        .course-progress, .course-info{
+        width: 100%;
+        height: 200px;
+        float: none;
+        }
+        .course-info{
+        height: 140px;
+        }
+        .course-info h2{
+        margin: 8px 0px;
+        }
+        .course-info a{
+        margin-top: 10px;
+        }
+        .course-progress h2{
+        margin: 16px 0px;
+        }
+        .btn{
+        bottom: 30px;
+        left: 30px;
+        }
+        }
+        
+}

@@ -1,0 +1,198 @@
+@media (min-width: 360px) {
+  .navbar{
+    .position-badge{
+      position: absolute;
+      left: 31%;
+      top: 45%;
+    }
+  }
+
+}
+
+@media (min-width: 400px) {
+  .navbar{
+    .position-badge{
+      position: absolute;
+      left: 32%;
+      top: 45%;
+    }
+  }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: $media-breakpoint-sm) {
+  .navbar {
+    .position-badge{
+      position: absolute;
+      left: 38%;
+      top: 45%;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: $media-breakpoint-md) {
+  .navbar {
+    .position-badge{
+      position: absolute;
+      left: 40.5%;
+      top: 45%;
+    }
+    .is-mobile {
+      .nav-item {
+        .nav-logo-link {
+          &-mobile {
+            min-height: 35px;
+            max-height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: $media-breakpoint-lg) {
+  .navbar {
+    .is-mobile {
+      display: none !important;
+    }
+    .is-desktop {
+      display: block !important;
+      .nav-section-left {
+        .toggle-menu {
+          display: none;
+          -webkit-transition: 0.6s;
+          -o-transition: 0.6s;
+          -moz-transition: 0.6s;
+          transition: 0.6s;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+            -moz-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+
+          &__btn {
+            font-size: 0;
+            white-space: nowrap;
+            line-height: 24px;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+              -moz-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+
+            span {
+              font-size: 1rem;
+            }
+            .menu-icon {
+              color: white;
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+      }
+
+      .nav-section-right {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -moz-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        padding-left: 1rem;
+        .menu-item {
+          font-size: 1.125rem;
+          .nav-link{
+            padding-left: 15px;
+            padding-right: 15px;
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+// specific breakpoint
+@media (min-width: 1024px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: $media-breakpoint-xlg) {
+  .navbar {
+    .is-mobile {
+      display: none !important;
+    }
+
+    .is-desktop {
+      display: block !important;
+
+      .nav-section-left {
+        &__logo {
+          height: 50px;
+          width: auto;
+          display: -webkit-inline-box;
+          display: -webkit-inline-flex;
+          display: -moz-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+             -moz-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+
+          .nav-logo {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -moz-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+               -moz-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            &:first-child {
+              margin-right: 0.5rem;
+            }
+
+            &-desktop {
+              width: auto;
+              height: 50px;
+            }
+          }
+        }
+      }
+
+      .nav-section-right {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -moz-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        padding-left: 1rem;
+        .menu-item {
+          font-size: 1.125rem;
+          .nav-link{
+            padding-left: 20px;
+            padding-right: 20px;
+            text-decoration: none;
+            color: black;
+            &__active{
+              padding-left: 20px;
+              padding-right: 20px;
+              color: #586A34;
+              font-weight: 700;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

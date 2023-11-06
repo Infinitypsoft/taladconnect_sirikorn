@@ -1,0 +1,14 @@
+.admin-home {
+    font-family: $font-prompt;
+    .text-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .text-from {
+        font-size: 17px;
+    }
+    .text-from p {
+        font-size: 15px;
+        color: gray;
+    }
+}

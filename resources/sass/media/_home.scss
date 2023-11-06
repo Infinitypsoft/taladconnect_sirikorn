@@ -1,0 +1,43 @@
+// Small devices (landscape phones, 450px and up)
+@media (max-width: 450px) {
+    .home-page {
+        .card-group{
+            height: auto;
+            .btn-group{
+              width: 160px;
+              height: 150px;
+            }
+          }
+    }
+}
+
+ // Small devices (landscape tablets, 900px and up)
+ @media  (max-width: 900px) {
+    .home-page {
+        .title-list {
+            margin-left: 1.5rem;
+        }
+        .text-list {
+            margin-left: 1.25rem;
+        }
+        .card-green {
+        margin: 17px;
+         margin-top: 40px;
+        }
+        .card-low {
+        margin: 17px;
+         margin-top: 40px;
+        }
+     }
+  }
+ // Small devices (landscape tablets(horizontal), 1180px and up)
+  @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .home-page {
+        .card-green {
+            margin-top: 40px;
+        }
+        .card-low {
+            margin-top: 40px;
+        }
+     }
+  }
